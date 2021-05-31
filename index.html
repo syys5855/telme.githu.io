@@ -2,118 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>联系我</title>
+  <title>Document</title>
 </head>
-<style>
-  *{
-    padding: 0;
-    margin: 0;
-  }
-  .con{
-    background-color: #000000;
-    height: 100vh;
-    width: 100vw; 
-  }
-  .card{
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-flow: column;
-    text-align: center;
-    transform-origin: center center;
-    color: rgba(255,255,255, 0.7);
-    animation: textUp 1s forwards;
-    opacity: 0;
-    background: linear-gradient(0deg, #3c3b3f, #605c3c);
-    overflow: hidden;
-  }
-  .link--tel{
-    display: inline-block;
-    margin: 10px 0;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 28px;
-    transform-origin: center;
-    opacity: 0;
-    animation: boundIn 1s forwards 1s;
-  }
-  @keyframes textUp {
-    from{
-      opacity: 0;
-      transform: translateY(-50px);
-    }
-    to{
-      opacity: 1;
-      transform: translateY(0px);
-    }
-  }
-  @keyframes boundIn{
-    0% {
-      transform: scale(0.4);
-      opacity: 0;
-    }
-    50% {
-      transform: scale(1.2);
-      opacity: 0.5;
-    }
-    70% {
-      transform: scale(0.8);
-      opacity: 0.7;
-    }
-    90%{
-      transform: scale(1.1);
-      opacity: 0.9;
-    }
-    100%{
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-  @keyframes shake {
-    0%{
-      transform: rotate(0deg);
-    }
-    10%{
-      transform: rotate(-40deg);
-    }
-    20%{
-      transform: rotate(20deg);
-    }
-    30%{
-      transform: rotate(-10deg);
-    }
-    40% {
-      transform: rotate(5deg);
-    }
-    50%{
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-</style>
-<body class="con">
-  <a href="tel:15757135855">
-    <div class="card">
-        <svg id="linkTel"  t="1617030075987" class="link--tel"  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="797" width="60" height="60"><path fill="currentColor" d="M721.1 1013.9c-94.9 0-297.4-103.6-458.8-271.3C93.8 567 30.5 457 13.1 304.4 5.2 231.6 40 154.1 97 116.1l53-35.6c22.1-15 48.3-22.9 75.1-22.9 42.7 0 83.1 20.6 108.4 54.6l95.7 128.9c36.4 48.3 33.2 116.3-7.9 161.4l-15.8 17.4c-12.7 13.4-14.2 34-4.7 49.8 16.6 28.5 37.2 54.6 60.9 77.5 25.3 24.5 60.9 53 106 83.9 7.1 4.7 15 7.1 23.7 7.1 11.1 0 22.1-4.7 30.1-12.7 19-19 40.3-34.8 63.3-46.7 9.5-4.7 19.8-7.1 30.9-7.1 45.1 0 108.4 38.8 209.6 130.5l15 14.2c53.8 49.8 58.5 134.5 9.5 189.1l-6.3 7.1c-31.6 34.8-59.3 57.7-83.9 70.4-51.4 26.9-67.2 30.9-124.2 30.9h-14.3z m-496-889.1c-13.4 0-26.1 4-37.2 11.1l-53.8 35.6c-30.1 20.6-59.3 71.2-53.8 124.2 15 131.3 68.8 227.8 212 379.7l18.2 19c142.4 147.9 329.9 250.8 409.8 250.8h6.3c47.5 0 57.7-1.6 88.6-16.6l14.2-7.1c14.2-7.9 32.4-22.9 53.8-44.3l10.3-11.1 6.3-7.1c24.5-26.9 22.1-69.6-4.7-94.1-54.6-50.6-100.5-86.2-134.5-106.8-15-9.5-27.7-15-38-18.2l-6.3-1.6-6.3 3.2-2.4 1.6c-11.1 6.3-22.1 14.2-31.6 22.9l-11.1 11.1c-19.8 18.2-45.9 28.5-73.6 28.5-22.1 0-43.5-6.3-61.7-19-48.3-33.2-87-63.3-115.5-91-27.7-26.9-51.4-57.7-72-91-25.3-41.9-20.6-94.1 11.9-129.7l15.8-17.4c19-21.4 20.6-53 3.2-75.9l-95.7-128.9c-10.3-17.6-30.8-27.9-52.2-27.9z m547.4 334.6c-16.6 0-30.1-11.9-33.2-27.7-12.7-68.8-57-117.1-119.4-129.7-8.7-1.6-16.6-7.1-21.4-14.2-4.7-7.9-7.1-16.6-4.7-25.3 3.2-15.8 17.4-26.9 33.2-26.9 2.4 0 4 0 6.3 0.8 89.4 17.4 155.8 87.8 172.4 183.5 1.6 8.7 0 18.2-5.5 25.3-5.5 7.1-12.7 12.7-22.1 14.2h-5.6zM978.2 438c-15.8 0-30.1-11.9-33.2-27.7-35.6-178.8-155-303.8-319.6-333-8.7-1.6-16.6-6.3-22.1-14.2-5.5-7.1-7.1-16.6-5.5-25.3C601 22 614.4 10.1 631 10.1c2.4 0 4 0 6.3 0.8 193.8 34 333.8 178.8 374.2 386 1.6 8.7 0 18.2-4.7 25.3-4.7 7.9-12.7 12.7-21.4 14.2-2.5 1.6-4.8 1.6-7.2 1.6z" p-id="798"></path></svg>
-      如有需要,点击拨打
-    </div>
-  </a>
+<body>
+  <div>
+    <input type="file" id="btnUpload"/>
+    休眠间隔:<input type="number" id="sleepTime" value="1"/>
+  </div>
 </body>
-<script>
-var linkTel = document.querySelector('#linkTel')
-
-setTimeout(function() {
-  linkTel.style.opacity = 1
-  linkTel.style.animation = 'shake 2s infinite'
-}, 3000)
-
-</script>
+<script src="./gif.js"></script>
+<script src="./gif.worker.js"></script>
+<script src="./index.js"></script>
 </html>

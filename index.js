@@ -209,20 +209,29 @@ async function main(path) {
   const img = await loadImage(path)
   const ctx = createCanvas(img.width, img.height)
   const data = getImageData(ctx, img)
+  const isExport = document.getElementById('isExport').checked
   // const gray =  getGrayImageData(img, data, ostu(data))
   // ctx.putImageData(gray,0,0)
   document.body.appendChild(ctx.canvas)
-  const gif = toGif(ctx)
+  
+  let gif
 
+  if (isExport) {
+    gif = toGif(ctx)
+  }
   drawDfs(ctx, img, data, ostu(data)).then(() => {
-    gif.loopend = true
-    gif.render()
+    if (gif) {
+      gif.loopend = true
+      gif.render()
+      gif = null
+    }
   })
 }
 
 window.onload = function() {
   const btnUpload = document.getElementById('btnUpload')
   const sleepTime = document.getElementById('sleepTime')
+  const isExport = 
 
   btnUpload.onchange = function() {
     const file = this.files[0]
@@ -232,7 +241,7 @@ window.onload = function() {
       URL.revokeObjectURL(url)
     })
   }
-
+  
   sleepTime.onchange = function() {
     SLEEP_INTRVAL = ~~+this.value
   }
